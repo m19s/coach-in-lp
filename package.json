@@ -1,0 +1,9 @@
+{
+  "name": "coach-in-lp",
+  "version": "0.0.1",
+  "description": "coach in lp",
+  "main": "main.js",
+  "repository": "https://github.com/m19s/coach-in-lp.git",
+  "author": "ojisan",
+  "license": "MIT"
+}
