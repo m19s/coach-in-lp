@@ -5,5 +5,32 @@
   "main": "main.js",
   "repository": "https://github.com/m19s/coach-in-lp.git",
   "author": "ojisan",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "tslint": "tslint --fix **/*.ts",
+    "precommit": "lint-staged",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier-eslint": "^8.8.1",
+    "prettier-eslint-cli": "^4.7.1",
+    "ts-loader": "^4.1.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.8.0",
+    "tslint-plugin-prettier": "^1.3.0",
+    "tsutils": "^2.22.2",
+    "typescript": "^2.7.2",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  },
+  "lint-staged": {
+    "*.ts": ["yarn tslint", "git add"]
+  },
+  "dependencies": {
+    "@types/three": "^0.89.12",
+    "three": "^0.91.0"
+  }
 }
