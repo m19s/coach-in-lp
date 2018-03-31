@@ -36,6 +36,10 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
+"@types/jquery@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.1.tgz#55758d44d422756d6329cbf54e6d41931d7ba28f"
+
 "@types/three@^0.89.12":
   version "0.89.12"
   resolved "https://registry.yarnpkg.com/@types/three/-/three-0.89.12.tgz#cab29544bbdfbbc62257dd48bf921eb3dc0e055a"
@@ -3669,6 +3673,10 @@ jest-validate@^22.4.0, jest-validate@^22.4.3:
     jest-get-type "^22.4.3"
     leven "^2.1.0"
     pretty-format "^22.4.3"
+
+jquery-inview@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/jquery-inview/-/jquery-inview-1.1.2.tgz#6b7cf6f4c9ab0b6435e043092e19ef62600662c8"
 
 jquery@^3.3.1:
   version "3.3.1"

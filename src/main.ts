@@ -1,9 +1,10 @@
 import * as THREE from "three";
-declare var $: any;
+import * as $ from "jquery";
+import "jquery-inview"; // ここでimportするとjquery pluginが使える
 
 window.addEventListener("DOMContentLoaded", () => {
   const renderer = new THREE.WebGLRenderer();
-  renderer.setSize(800, 600);
+  renderer.setSize(window.parent.screen.width, window.parent.screen.height);
   document.getElementById("keyvisual").appendChild(renderer.domElement);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(45, 800 / 600, 1, 10000);
@@ -23,18 +24,38 @@ window.addEventListener("DOMContentLoaded", () => {
     renderer.render(scene, camera);
   };
   tick();
-  console.log("Hello Three.js");
 });
 
 (function() {
-  const textArray = "coach-inについて";
-  let counter = 0;
-  setInterval(function() {
-    const textArrayLength = textArray.length;
-    $("#about").append(textArray[counter]);
-    counter = counter + 1;
-    if (counter === textArrayLength) {
-      clearInterval(this);
+  $("#about").on("inview", function(event, isInView) {
+    if (isInView) {
+      const textArray = "coach-inについて";
+      let counter = 0;
+      setInterval(function() {
+        const textArrayLength = textArray.length;
+        $("#about").append(textArray[counter]);
+        counter = counter + 1;
+        if (counter === textArrayLength) {
+          clearInterval(this);
+        }
+      }, 40);
+    } else {
     }
-  }, 50);
+  });
+
+  $("#howto").on("inview", function(event, isInView) {
+    if (isInView) {
+      const textArray = "How To Use";
+      let counter = 0;
+      setInterval(function() {
+        const textArrayLength = textArray.length;
+        $("#howto").append(textArray[counter]);
+        counter = counter + 1;
+        if (counter === textArrayLength) {
+          clearInterval(this);
+        }
+      }, 40);
+    } else {
+    }
+  });
 })();
