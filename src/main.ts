@@ -1,9 +1,10 @@
 import * as THREE from "three";
+declare var $: any;
 
 window.addEventListener("DOMContentLoaded", () => {
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(800, 600);
-  document.body.appendChild(renderer.domElement);
+  document.getElementById("keyvisual").appendChild(renderer.domElement);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(45, 800 / 600, 1, 10000);
   camera.position.set(0, 0, 1000);
@@ -22,6 +23,18 @@ window.addEventListener("DOMContentLoaded", () => {
     renderer.render(scene, camera);
   };
   tick();
-
   console.log("Hello Three.js");
 });
+
+(function() {
+  const textArray = "coach-inについて";
+  let counter = 0;
+  setInterval(function() {
+    const textArrayLength = textArray.length;
+    $("#about").append(textArray[counter]);
+    counter = counter + 1;
+    if (counter === textArrayLength) {
+      clearInterval(this);
+    }
+  }, 50);
+})();
