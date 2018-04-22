@@ -3,13 +3,19 @@ import * as $ from "jquery";
 import "jquery-inview"; // ここでimportするとjquery pluginが使える
 import { jarallax, jarallaxElement, jarallaxVideo } from "jarallax";
 import AOS from "aos";
+import "./reset.scss";
 import "./style.scss";
 
 AOS.init();
 
 window.addEventListener("DOMContentLoaded", () => {
   const renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.parent.screen.width, window.parent.screen.height);
+  // renderer.setSize(window.parent.screen.width, window.parent.screen.height);
+  // var ratio = window.devicePixelRatio || 1;
+  const ratio = 1;
+  const w = screen.width * ratio;
+  const h = screen.height * ratio;
+  renderer.setSize(w, h);
   document.getElementById("keyvisual").appendChild(renderer.domElement);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(45, 800 / 600, 1, 10000);
@@ -45,6 +51,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       }, 40);
     } else {
+      $("#about").empty();
     }
   });
 
@@ -61,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       }, 40);
     } else {
-      null;
+      $("#howto").empty();
     }
   });
 })();

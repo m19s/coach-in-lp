@@ -11,28 +11,23 @@ body {
 #keyvisual {
   width: 100%;
   height: 100%;
-  flex: 1;
 }
-
-/* .container {
-  display: flex;
-  flex: auto;
-  flex-flow: row;
-  width: 100%;
-} */
 
 .contents {
   width: 100%;
-  flex-flow: row;
   height: auto;
   flex: 1;
 }
 
-.discription {
+.discreption {
   display: flex;
-  width: 50%;
 }
 
-.image_box {
-  height: 100%;
+.container {
+  margin: 16px;
+}
+
+h2 {
+  color: rebeccapurple;
+  font-size: 36px;
 }

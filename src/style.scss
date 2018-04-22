@@ -6,32 +6,92 @@ html {
 body {
   width: 100%;
   height: 100%;
+  font-family: "Rounded Mplus 1c";
 }
 
-#keyvisual {
-  width: 100%;
-  height: 100%;
-  flex: 1;
-}
-
-// .container {
-//   display: flex;
-//   flex: auto;
-//   flex-flow: row;
+// #keyvisual {
 //   width: 100%;
+//   height: 100%;
+//   flex: 1;
 // }
 
-.contents {
-  width: 100%;
-  height: auto;
-  flex: 1;
+// // .container {
+// //   display: flex;
+// //   flex: auto;
+// //   flex-flow: row;
+// //   width: 100%;
+// // }
+
+// .contents {
+//   width: 100%;
+//   height: auto;
+//   flex: 1;
+// }
+
+// .discreption {
+//   display: flex;
+// }
+
+// .image_box {
+//   width: 30%;
+//   height: 100%;
+// }
+
+.container {
+}
+
+h2 {
+  color: #ff0066;
+  font-size: 36px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  background-color: white;
+}
+p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #ff0066;
+}
+
+section {
+  background-image: url("../assets/pink_back.jpg");
+  padding: 16px;
 }
 
 .discreption {
-  display: flex;
+  background-color: white;
 }
 
-.image_box {
-  width: 30%;
-  height: 100%;
+#keyvisual {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 56px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  position: absolute;
+  font-size: 36px;
+  color: white;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-60%, -50%);
+  -moz-transform: translate(-60%, -50%);
+  -ms-transform: translate(-60%, -50%);
+  -o-transform: translate(-60%, -50%);
+  transform: translate(-60%, -50%);
+}
+
+.visual {
+  z-index: -1;
 }
