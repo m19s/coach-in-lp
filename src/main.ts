@@ -1,6 +1,11 @@
 import * as THREE from "three";
 import * as $ from "jquery";
 import "jquery-inview"; // ここでimportするとjquery pluginが使える
+import { jarallax, jarallaxElement, jarallaxVideo } from "jarallax";
+import AOS from "aos";
+import "./style.scss";
+
+AOS.init();
 
 window.addEventListener("DOMContentLoaded", () => {
   const renderer = new THREE.WebGLRenderer();
@@ -56,6 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       }, 40);
     } else {
+      null;
     }
   });
 })();
