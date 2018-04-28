@@ -172,14 +172,13 @@ Tunnel.prototype.updateCurve = function(delta) {
 
   this.curve.points[2].x = 100 * (1 - this.mouse.ratio.x) - 50;
   this.curve.points[4].x = 100 * (1 - this.mouse.ratio.x) - 50;
-
   this.curve.points[2].y = 100 * (1 - this.mouse.ratio.y) - 50;
   this.curve.points[4].y = 100 * (1 - this.mouse.ratio.y) - 50;
 
   this.splineMesh.geometry.verticesNeedUpdate = true;
   this.splineMesh.geometry.vertices = this.curve.getPoints(120);
 
-  delta *= 0.0003;
+  delta *= 0.0008;
   var f, p, h, rgb;
   for (var i = 0; i < this.tubeGeometry.faces.length; i++) {
     f = this.tubeGeometry.faces[i];
@@ -191,7 +190,7 @@ Tunnel.prototype.updateCurve = function(delta) {
         0.01 +
         180) /
       360;
-    rgb = hslToRgb(h, 0.7, 0.6);
+    rgb = hslToRgb(h, -0.7, 0.5);
     color = new THREE.Color(rgb[0], rgb[1], rgb[2]);
     f.color = color;
   }
@@ -200,9 +199,7 @@ Tunnel.prototype.updateCurve = function(delta) {
 
 Tunnel.prototype.render = function(delta) {
   this.updateCameraPosition();
-
   this.updateCurve(delta);
-
   this.renderer.render(this.scene, this.camera);
 
   window.requestAnimationFrame(this.render.bind(this));

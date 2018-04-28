@@ -1,0 +1,25 @@
+.keyvisual-section {
+  position: relative;
+}
+
+.keyvisual-titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 24px;
+}
