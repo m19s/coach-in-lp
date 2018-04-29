@@ -5,268 +5,290 @@
 
 font-family: "Noto Sans Japanese";
 html {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: whitesmoke;
 }
 
 section {
-    margin: 0px;
-    padding: 0px;
-    background: black;
-    min-height: 100vh;
-    padding-bottom: 36px;
+  margin: 0px;
+  padding: 0px;
+  background: black;
+  min-height: 100vh;
+  padding-bottom: 36px;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.discreption__image-box>img {
-    width: 100%;
-    height: 100%;
+.discreption__image-box > img {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    /* position: fixed; */
-    min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  /* position: fixed; */
+  min-height: 56px;
 }
 
 .header__navs {
-    display: flex;
+  display: flex;
 }
 
-.header__navs>div {
-    margin-right: 8px;
+.header__navs > div {
+  margin-right: 8px;
 }
 
-.header__nav>a {
-    color: white;
+.header__nav > a {
+  color: white;
 }
 
 .header__logo {
-    width: 56px;
+  width: 56px;
 }
 
 .about {
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding: 32px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 32px;
 }
 
 .discreption__text {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 section {
-    background-color: whitesmoke;
-    min-height: 100vh;
+  background-color: whitesmoke;
+  min-height: 100vh;
 }
 
 .keyvisual-section {
-    margin-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  background-color: black;
 }
 
 .section__title {
-    text-align: center;
+  text-align: center;
 }
 
 .firstview {
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/demo1/stonePatternBump.jpg");
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/demo1/stonePatternBump.jpg");
 }
 
 .keyvisual-section {
-    position: relative;
+  position: relative;
 }
 
 #model {
-    position: absolute;
+  position: absolute;
 }
 
 .keyvisual-titles {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .kv__title {
-    color: white;
-    font-size: 36px;
+  color: white;
+  font-size: 36px;
 }
 
 .kv__subtitle {
-    color: white;
-    font-size: 24px;
+  color: white;
+  font-size: 24px;
 }
 
 .discreption {
-    display: flex;
+  display: flex;
 }
 
-.discreption--image-left>.discreption {
-    flex-direction: row-reverse;
+.discreption--image-left > .discreption {
+  flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 375px) {
-    .discreption {
-        display: block;
-    }
+  .discreption {
+    display: block;
+  }
 }
 
-section>h2 {
-    font-size: 36px;
-    margin-top: 36px;
-    margin-bottom: 36px;
+section > h2 {
+  font-size: 36px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 
-.discreption>* {
-    padding: 8px;
+.discreption > * {
+  padding: 8px;
 }
 
 .discreption__image-box {
-    text-align: center;
-    width: 30%;
-    margin: auto;
+  text-align: center;
+  width: 30%;
+  margin: auto;
 }
 
 .discreption__image {
-    width: 100%;
+  width: 100%;
 }
 
 .contents {
-    padding: 16px;
+  padding: 16px;
 }
 
-.discreption>.card {
-    margin-right: 8px;
-    margin-left: 8px;
+.discreption > .card {
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .card {
-    padding: 24px;
+  padding: 24px;
 }
 
 .image {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 .developing {
-    background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
-.developing>.discreption__image-box {
-    width: 50%;
+.developing > .discreption__image-box {
+  width: 50%;
 }
 
 .system__image {
-    width: 80%
+  width: 80%;
 }
 
-.system__image>img {
-    width: 100%
+.system__image > img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 375px) {
-    .contents {
-        clear: both;
-    }
-    .discreption__text {
-        width: 100%;
-    }
+  .contents {
+    clear: both;
+  }
+  .discreption__text {
+    width: 100%;
+  }
 }
 
 .experience {
-    /* background-color: black; */
-    height: auto;
-    min-height: 0px;
+  /* background-color: black; */
+  height: auto;
+  min-height: 0px;
 }
 
 .tile.is-ancestor {
-    margin: 0px;
+  margin: 0px;
 }
 
 .developing {
-    text-align: center;
+  text-align: center;
 }
 
 .aboutus {
-    position: relative;
+  position: relative;
+  padding-bottom: 0px;
 }
 
-.aboutus>.section__title {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-    -moz-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    -o-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-    color: white;
+.aboutus > .section__title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  color: white;
 }
 
 .columns {
-    margin: 0px;
+  margin: 0px;
 }
 
-.aboutus>.footer__copy {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-    -moz-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    -o-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-    color: white;
-    top: 90%;
+.column {
+  margin: 0px;
 }
 
-.aboutus>.discreption__text {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-    -moz-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    -o-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-    color: white;
-    top: 15%;
-    text-align: center;
+.aboutus > .footer__copy {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  color: white;
+  top: 90%;
+}
+
+.aboutus > .discreption__text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  color: white;
+  top: 10%;
+  text-align: center;
+}
+
+.m19slink {
+  color: white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  color: white;
+  top: 85%;
+  text-align: center;
+  font-size: 24px;
 }
 
 .m19slogo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, 0%);
-    -moz-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    -o-transform: translate(-50%, 0%);
-    transform: translate(-50%, 50%);
-    width: 256px;
-    margin: auto;
-    text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 50%);
+  width: 256px;
+  margin: auto;
+  text-align: center;
 }
