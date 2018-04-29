@@ -1,115 +1,272 @@
+/* 冒頭でimport */
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* フォントを指定したいところで */
+
+font-family: "Noto Sans Japanese";
 html {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: whitesmoke;
 }
 
 section {
-  margin: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    min-height: 100vh;
+    padding-bottom: 36px;
 }
 
-.firstview {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/demo1/stonePatternBump.jpg");
+p {
+    font-size: 20px;
 }
 
-.keyvisual-section {
-  position: relative;
+.discreption__image-box>img {
+    width: 100%;
+    height: 100%;
 }
 
-.keyvisual-titles {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* position: fixed; */
+    min-height: 56px;
 }
 
-.title {
-  color: white;
-  font-size: 36px;
+.header__navs {
+    display: flex;
 }
 
-.subtitle {
-  color: white;
-  font-size: 24px;
+.header__navs>div {
+    margin-right: 8px;
 }
 
-.discreption {
-  display: flex;
+.header__nav>a {
+    color: white;
 }
 
-.discreption--image-left > .discreption {
-  flex-direction: row-reverse;
+.header__logo {
+    width: 56px;
 }
 
-@media only screen and (max-width: 375px) {
-  .discreption {
-    display: block;
-  }
-}
-
-section > h2 {
-  font-size: 36px;
-}
-
-.discreption > * {
-  padding: 8px;
-}
-
-.discreption__image-box {
-  width: 40%;
+.about {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 32px;
 }
 
 .discreption__text {
-  width: 60%;
+    margin-top: 32px;
 }
 
-.discreption__image {
-  width: 100%;
+section {
+    background-color: whitesmoke;
+    min-height: 100vh;
+}
+
+.keyvisual-section {
+    margin-top: 0px;
+}
+
+.section__title {
+    text-align: center;
+}
+
+.firstview {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/demo1/stonePatternBump.jpg");
+}
+
+.keyvisual-section {
+    position: relative;
+}
+
+#model {
+    position: absolute;
+}
+
+.keyvisual-titles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.kv__title {
+    color: white;
+    font-size: 36px;
+}
+
+.kv__subtitle {
+    color: white;
+    font-size: 24px;
+}
+
+.discreption {
+    display: flex;
+}
+
+.discreption--image-left>.discreption {
+    flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 375px) {
-  .contents {
-    clear: both;
-  }
-  .discreption__image-box--left {
-    float: left;
-  }
+    .discreption {
+        display: block;
+    }
+}
 
-  .discreption__image-box--right {
-    float: right;
-  }
-  .discreption__text {
+section>h2 {
+    font-size: 36px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.discreption>* {
+    padding: 8px;
+}
+
+.discreption__image-box {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+.discreption__image {
     width: 100%;
-  }
 }
 
-footer {
-  background-color: navy;
-  padding: 16px;
-  color: white;
+.contents {
+    padding: 16px;
 }
 
-.footer__copy {
-  text-align: center;
+.discreption>.card {
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
-.info {
-  display: flex;
+.card {
+    padding: 24px;
 }
 
-.info > div {
-  width: 33%;
+.image {
+    text-align: center;
+    margin: auto;
+}
+
+.developing {
+    background-color: whitesmoke
+}
+
+.developing>.discreption__image-box {
+    width: 50%;
+}
+
+.system__image {
+    width: 80%
+}
+
+.system__image>img {
+    width: 100%
+}
+
+@media only screen and (max-width: 375px) {
+    .contents {
+        clear: both;
+    }
+    .discreption__text {
+        width: 100%;
+    }
+}
+
+.experience {
+    /* background-color: black; */
+    height: auto;
+    min-height: 0px;
+}
+
+.tile.is-ancestor {
+    margin: 0px;
+}
+
+.developing {
+    text-align: center;
+}
+
+.aboutus {
+    position: relative;
+}
+
+.aboutus>.section__title {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    color: white;
+}
+
+.columns {
+    margin: 0px;
+}
+
+.aboutus>.footer__copy {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    color: white;
+    top: 90%;
+}
+
+.aboutus>.discreption__text {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    color: white;
+    top: 15%;
+    text-align: center;
+}
+
+.m19slogo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 50%);
+    width: 256px;
+    margin: auto;
+    text-align: center;
 }

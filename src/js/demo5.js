@@ -4,36 +4,39 @@ var wh = window.innerHeight;
 function Tunnel() {
   this.init();
   this.createMesh();
-
   this.handleEvents();
-
   window.requestAnimationFrame(this.render.bind(this));
 }
 
-Tunnel.prototype.init = function() {
+Tunnel.prototype.init = function () {
   this.speed = 4;
-
   this.mouse = {
     position: new THREE.Vector2(ww * 0.5, wh * 0.5),
     ratio: new THREE.Vector2(0, 0),
     target: new THREE.Vector2(ww * 0.5, wh * 0.5)
   };
-
   this.renderer = new THREE.WebGLRenderer({
     antialias: true,
     canvas: document.querySelector("#scene")
   });
   this.renderer.setSize(ww, wh);
-
   this.camera = new THREE.PerspectiveCamera(15, ww / wh, 0.01, 10);
   this.camera.rotation.y = Math.PI;
   this.camera.position.z = 0.4;
-
   this.scene = new THREE.Scene();
   this.scene.fog = new THREE.Fog(0xffffff, 1, 1.9);
+  // // 3DS形式のモデルデータを読み込む
+  // var loader = new THREE.TDSLoader();
+  // // テクスチャーのパスを指定
+  // loader.setPath("../assets/");
+  // // 3dsファイルのパスを指定
+  // loader.load("../assets/coachin.3ds", object => {
+  //   // 読み込み後に3D空間に追加
+  //   this.scene.add(object);
+  // });
 };
 
-Tunnel.prototype.createMesh = function() {
+Tunnel.prototype.createMesh = function () {
   var points = [];
   var i = 0;
   var geometry = new THREE.Geometry();
@@ -64,12 +67,12 @@ Tunnel.prototype.createMesh = function() {
     p = this.tubeGeometry.vertices[f.a];
     color = new THREE.Color(
       "hsl(" +
-        (Math.floor(
+      (Math.floor(
           Math.abs(noise.simplex3(p.x * 2, p.y * 4, p.z * 2)) * 80 * 100
         ) *
-          0.01 +
-          180) +
-        ",70%,60%)"
+        0.01 +
+        180) +
+      ",70%,60%)"
     );
     f.color = color;
   }
@@ -80,7 +83,7 @@ Tunnel.prototype.createMesh = function() {
   this.scene.add(this.tubeMesh);
 };
 
-Tunnel.prototype.handleEvents = function() {
+Tunnel.prototype.handleEvents = function () {
   window.addEventListener("resize", this.onResize.bind(this), false);
   document.body.addEventListener(
     "mousemove",
@@ -89,7 +92,7 @@ Tunnel.prototype.handleEvents = function() {
   );
 };
 
-Tunnel.prototype.onResize = function() {
+Tunnel.prototype.onResize = function () {
   ww = window.innerWidth;
   wh = window.innerHeight;
 
@@ -98,16 +101,16 @@ Tunnel.prototype.onResize = function() {
   this.renderer.setSize(ww, wh);
 };
 
-Tunnel.prototype.onMouseMove = function(e) {
+Tunnel.prototype.onMouseMove = function (e) {
   this.mouse.target.x = e.clientX;
   this.mouse.target.y = e.clientY;
 };
 
-Tunnel.prototype.update = function() {
+Tunnel.prototype.update = function () {
   this.createMesh();
 };
 
-Tunnel.prototype.updateCameraPosition = function() {
+Tunnel.prototype.updateCameraPosition = function () {
   this.mouse.position.x += (this.mouse.target.x - this.mouse.position.x) / 30;
   this.mouse.position.y += (this.mouse.target.y - this.mouse.position.y) / 30;
 
@@ -148,7 +151,7 @@ function hslToRgb(h, s, l) {
   ];
 }
 
-Tunnel.prototype.updateCurve = function(delta) {
+Tunnel.prototype.updateCurve = function (delta) {
   var i = 0;
   var index = 0;
   var vertice_o = null;
@@ -172,39 +175,39 @@ Tunnel.prototype.updateCurve = function(delta) {
 
   this.curve.points[2].x = 100 * (1 - this.mouse.ratio.x) - 50;
   this.curve.points[4].x = 100 * (1 - this.mouse.ratio.x) - 50;
+
   this.curve.points[2].y = 100 * (1 - this.mouse.ratio.y) - 50;
   this.curve.points[4].y = 100 * (1 - this.mouse.ratio.y) - 50;
 
   this.splineMesh.geometry.verticesNeedUpdate = true;
   this.splineMesh.geometry.vertices = this.curve.getPoints(120);
 
-  delta *= 0.0008;
+  delta *= 0.0003;
   var f, p, h, rgb;
   for (var i = 0; i < this.tubeGeometry.faces.length; i++) {
     f = this.tubeGeometry.faces[i];
     p = this.tubeGeometry.vertices[f.a];
     h =
       (Math.floor(
-        Math.abs(noise.simplex3(p.x * 2, p.y * 4, p.z * 2 + delta)) * 80 * 100
-      ) *
+          Math.abs(noise.simplex3(p.x * 2, p.y * 4, p.z * 2 + delta)) * 80 * 100
+        ) *
         0.01 +
         180) /
       360;
-    rgb = hslToRgb(h, -0.7, 0.5);
+    rgb = hslToRgb(h, 0.7, 0.6);
     color = new THREE.Color(rgb[0], rgb[1], rgb[2]);
     f.color = color;
   }
   this.tubeGeometry.elementsNeedUpdate = true;
 };
 
-Tunnel.prototype.render = function(delta) {
+Tunnel.prototype.render = function (delta) {
   this.updateCameraPosition();
   this.updateCurve(delta);
   this.renderer.render(this.scene, this.camera);
-
   window.requestAnimationFrame(this.render.bind(this));
 };
 
-window.onload = function() {
+window.onload = function () {
   window.tunnel = new Tunnel();
 };

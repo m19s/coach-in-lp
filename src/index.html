@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script>
         document.documentElement.className = 'js';
@@ -19,116 +20,220 @@
 </head>
 
 <body>
-
-    <section class='firstview'>
-        <h1>ここにメッセージが入ります</h1>
-    </section>
-
-    <section class='about'>
-        <h2 id="about"></h2>
-        <div class='discreption discreption--image-right'>
-
-            <div data-aos="fade-up-right" class='discreption__image-box discreption__image-box--right' data-aos-easing="ease-in-sine"
-                data-aos-duration="1500">
-                <img src='../assets/dinner.jpg' class='discreption__image'>
-            </div>
-            <p class='discreption__text'>coach-inはあなたの体を操ってくれるウェアラブルデバイスです。</p>
+    <nav class='header'>
+        <div class='header__logo'>
+            <img src="../assets/logo.svg" alt="Placeholder image">
         </div>
-    </section>
-
-    <section class='contents discreption--image-left'>
-        <h2 id="howto"></h2>
-        <div class='discreption'>
-            <div data-aos="fade-up-right" class='discreption__image-box discreption__image-box--left' data-aos-easing="ease-in-sine "
-                data-aos-duration="1500">
-                <img src='../assets/dinner.jpg' class='discreption__image'>
+        <div class='header__navs'>
+            <div class='header__nav--first-item header__nav'>
+                <a href="#about">about</a>
             </div>
-            <p class='discreption__text'>(1) Coach-inを腕にそうちゃくします. </p>
-            <p class='discreption__text'>(2) デバイスのスイッチを入れます. </p>
-            <p class='discreption__text'>(3) スマートフォンのアプリを起動します. </p>
-            <p class='discreption__text'>(4) アプリから好きな動きを再生してください. </p>
-        </div>
-    </section>
-
-    <section class='contents discreption--image-right'>
-        <h2 id="tech"></h2>
-        <div class='discreption'>
-            <div data-aos="fade-up-right" class='discreption__image-box discreption__image-box--right' data-aos-easing="ease-in-sine"
-                data-aos-duration="1500">
-                <img src='../assets/dinner.jpg' class='discreption__image'>
+            <div class='header__nav--secound-item header__nav'>
+                <a href="#tech">technology</a>
             </div>
-            <p class='discreption__text'>ハードウェアはこんな感じ</p>
-        </div>
-
-        <div class='discreption'>
-            <div data-aos="fade-up-right" class='discreption__image-box discreption__image-box--right' data-aos-easing="ease-in-sine"
-                data-aos-duration="1500">
-                <img src='../assets/dinner.jpg' class='discreption__image'>
+            <div class='header__nav--third-item header__nav'>
+                <a href="#aboutus">about us</a>
             </div>
-            <p class='discreption__text'>ファームウェアはこんな感じ</p>
         </div>
+    </nav>
 
-        <div class='discreption'>
-            <div data-aos="fade-up-right" class='discreption__image-box discreption__image-box--right' data-aos-easing="ease-in-sine"
-                data-aos-duration="1500">
-                <img src='../assets/dinner.jpg' class='discreption__image'>
-            </div>
-            <p class='discreption__text'>ソフトウェアはこんな感じ</p>
-        </div>
-    </section>
-
-    <section class='contents discreption--image-left'>
-        <h2 id="mechanism"></h2>
-        <div class='discreption'>
-            <div data-aos="fade-up-right" class='discreption__image-box discreption__image-box--left' data-aos-easing="ease-in-sine "
-                data-aos-duration="1500">
-                <img src='../assets/dinner.jpg' class='discreption__image'>
-            </div>
-            <p class='discreption__text'>筋肉は電気信号で動くんですよ </p>
-        </div>
-    </section>
-
-
-
-    <section class='keyvisual-section discreption--image-right'>
+    <section class='keyvisual-section'>
+        <canvas id='model'>
+        </canvas>
         <div class='keyvisual-titles'>
-            <p class="title">ここにタイトルが入ります</p>
-            <p class="subtitle">ここにテキストが入ります</p>
+            <!-- <p class="kv__title">ここにタイトルが入ります</p>
+            <p class="kv__subtitle">ここにテキストが入ります</p> -->
         </div>
         <canvas id="scene">
         </canvas>
+
     </section>
 
-    <footer class='footer'>
-        <div class='info'>
-            <div class="info__m19slink">
-                <p>m19s link</p>
-                <p>m19s link</p>
-                <p>m19s link</p>
-                <p>m19s link</p>
+
+    <section class='about' id='about'>
+        <!-- <h2 id="about" class='section__title'></h2> -->
+        <h2 class='section__title'>what is coach-in</h2>
+        <figure class="image is-256x256 discreption__image-box discreption__image-box--right" data-aos="fade-up" data-aos-easing="ease-in-sine"
+            data-aos-duration="500">
+            <img src="../assets/logo.svg" alt="Placeholder image">
+        </figure>
+        <div class='discreption discreption--image-right'>
+
+            <p class='discreption__text'>Coach-inは電気刺激を用いて装着者の身体を駆動させるウェアラブルデバイスです。 スポーツトレーニングのコーチが身体の動かし方を教えてくれるように、ウェアラブルデバイスがあなたの身体を駆動させ教示することを目指しています。
+                自分の身体が誰かに操られる、そんな体験を提供します。
+            </p>
+        </div>
+    </section>
+
+    <section class='tech contents' id='tech'>
+        <h2 class='section__title'>technology</h2>
+        <div class="columns discreption">
+            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card-image">
+                    <figure class="image is-128x128">
+                        <img src="../assets/elec.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">EMS</p>
+                        <p class="subtitle is-6">Electric Muscle Stimulation（EMS）による身体駆動</p>
+                        筋肉は、脳からの命令となる電気的な刺激を受け運動します。 電気筋肉刺激（Electric Muscle Stimulation：EMS）は脳の命令と同様の刺激を電気によって与え筋肉を運動させる技術です。Coach-inはこの技術を用いユーザの指を動かします。我々は指の駆動にEMSを用いることで、モータやワイヤを用いる場合と比べ軽量・小型なウェアラブルデバイスを開発しています。
+                        <a>#electronics</a>.
+                        <a>#muscle</a>
+                        <a>#pad</a>
+                    </div>
+                </div>
             </div>
-            <div class="info__help">
-                <p>安全への取り組み</p>
-                <p>安全への取り組み</p>
-                <p>安全への取り組み</p>
+            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                <div class="card-image">
+                    <figure class="image is-128x128">
+                        <img src="../assets/iphone.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">iOS Application</p>
+                        <p class="subtitle is-6">Bluetoothによる様々な機器との連携 </p>
+                        Coach-inには搭載されたBluetoothモジュールが搭載されており、コンピュータやスマートフォンと通信することで様々な機器と連携することができます。 例えば、コンピュータに接続されたゲームコントローラーで他人の身体を遠隔操作したり、スマホで再生している音楽に合わせて勝手に足踏みしてしまう体験を提供できます。
+                        <a>#swift</a>.
+                        <a>#bluetooth</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="info__sitemap">
-                <p>サイトマップ</p>
-                <p>サイトマップ</p>
-                <p>サイトマップ</p>
-                <p>サイトマップ</p>
+            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
+                <div class="card-image">
+                    <figure class="image is-128x128">
+                        <img src="../assets/sensor.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">Sensor</p>
+                        <p class="subtitle is-6">センサフュージョンによる行動センシング </p>
+                        Coach-inには加速度センサ・ジャイロセンサ・筋電位センサが搭載されており、ユーザの行動をリアルタイムにセンシング・分析します。 Coach-inはこれらのセンサのデータをリアルタイムに分析することで、あなたの身体へ適切な筋肉の動かし方を指示します。
+                        <a>#ESP32</a>
+                        <a>#bluetooth</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1300">
+                <div class="card-image">
+                    <figure class="image is-128x128">
+                        <img src="../assets/mike.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">Virtual Assistant</p>
+                        <p class="subtitle is-6">音声対話インターフェイスによる情報入力</p>
+                        Coach-inに搭載されたマイクはあなたと音声対話エージェントとの会話を可能にします。 マイクから入力された音声はクラウドサーバで音声解析され、その結果はCoach-inに取り付けられたLEDの光とスピーカーからの音声でユーザに伝わります。
+                        我々は自分とは異なる存在が身体にインストールされる体験を提案します。
+                        <a>#alexa</a>
+                        <a>#aws lambda</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <p class='footer__copy'>(c) matsutake technologies</p>
+    </section>
 
-    </footer>
+    <section class='experience' id='experience'>
+        <!-- <h2 id="about" class='section__title'></h2> -->
+        <h2 class='section__title'>Experience Exmaple</h2>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">遠隔二人羽織体験</p>
+                        <p class="subtitle">腕に装着することで、他人の腕の動きが自分の腕にシンクロする「遠隔二人羽織体験」
+                        </p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">強制ダンスフロア体験</p>
+                        <p class="subtitle">足に装着することで、映像とシンクロして足踏みしてしまう</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">ミギー憑依体験</p>
+                        <p class="subtitle">音声対話エージェント機能を活用した自分の右手と対話する</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class='developing' id='developing'>
+        <h2 class='section__title'>Developing now</h2>
+        <p>現在、左右の腕に装着し指を駆動させるデバイスとして開発を進めています。</p>
+
+        <div class="columns discreption">
+            <div class="column  is-one-third " data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="">
+                    <figure class="image is-512x512">
+                        <img src="../assets/ model.png" alt="Placeholder image">
+                    </figure>
+                </div>
+            </div>
+            <div class="column  is-one-third" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                <div class="">
+                    <figure class="image is-512x512">
+                        <img src="../assets/pad.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+
+
+            </div>
+            <div class="column  is-one-third" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
+
+                <figure class="image is-512x512">
+                    <img src="../assets/modelwriting.png" alt="Placeholder image">
+                </figure>
+
+            </div>
+        </div>
+
+        <figure class="image is-1024x1024 discreption__image-box system__image" data-aos="fade-up" data-aos-easing="ease-in-sine"
+            data-aos-duration="500">
+            <img src="../assets/system.png" alt="Placeholder image">
+        </figure>
+    </section>
+
+    <section class='aboutus' id='aboutus'>
+        <h2 class='section__title'>about us</h2>
+        <p class='discreption__text'>松茸電脳科技（Mat5utake Technologies）は, 技術を用いて, 世の中の暮らしをよくするプロダクツを生み出す, "クリエイティヴハッカー集団 "です. エレクトロニクス, マシンラーニング, ハードウェア設計,
+            インターネットの技術者によって構成されています.
+            <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
+        </p>
+        <div class='wrapper'></div>
+    </section>
 
     <script src="js/vendors/three.min.js "></script>
+    <script src="js/vendors/OrbitControls.js"></script>
+    <script src="js/vendors/TDSLoader.js"></script>
     <script src="js/vendors/aos.js "></script>
     <script src="js/vendors/jquery-3.3.1.min.js "></script>
     <script src="js/vendors/jquery.inview.min.js "></script>
     <script src="js/vendors/perlin.js "></script>
     <script src="js/demo5.js "></script>
+    <script src="js/model.js "></script>
     <script src="js/main.js "></script>
     <script>
         AOS.init();
