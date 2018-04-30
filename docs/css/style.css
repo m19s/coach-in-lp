@@ -1,13 +1,18 @@
-/* 冒頭でimport */
-
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-/* フォントを指定したいところで */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 
-font-family: "Noto Sans Japanese";
+p {
+  font-family: "Mplus 1p";
+}
+
 html {
   width: 100%;
   height: 100%;
   margin: 0px;
+}
+h2{
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -15,6 +20,7 @@ body {
   height: 100%;
   margin: 0px;
   background-color: whitesmoke;
+  font-family: "Mplus 1p";
 }
 
 section {
@@ -23,6 +29,7 @@ section {
   background: black;
   min-height: 100vh;
   padding-bottom: 36px;
+  font-family: "Mplus 1p";
 }
 
 p {
@@ -42,7 +49,6 @@ p {
   color: white;
   padding-top: 4px;
   padding-bottom: 4px;
-  /* position: fixed; */
   min-height: 56px;
 }
 
@@ -140,12 +146,16 @@ section {
 
 section > h2 {
   font-size: 36px;
-  margin-top: 36px;
+  padding-top: 18px;
   margin-bottom: 36px;
 }
 
 .discreption > * {
   padding: 8px;
+}
+
+.tech__columns > div {
+  /* margin: 8px; */
 }
 
 .discreption__image-box {
@@ -192,13 +202,14 @@ section > h2 {
   width: 100%;
 }
 
-@media only screen and (max-width: 375px) {
-  .contents {
-    clear: both;
-  }
-  .discreption__text {
-    width: 100%;
-  }
+margin-left: 8px;
+}
+
+@media screen and (min-width: 769px) .column.is-one-quarter {
+    flex: none;
+    width: 25%;
+} {
+  flex: initial;
 }
 
 .experience {
@@ -239,29 +250,20 @@ section > h2 {
   margin: 0px;
 }
 
-.aboutus > .footer__copy {
+.discreption__text {
   position: absolute;
+  color: white;
+  width: 80%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
+  /* -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%); */
   transform: translate(-50%, 0%);
   color: white;
-  top: 90%;
-}
-
-.aboutus > .discreption__text {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  color: white;
-  top: 10%;
+  /* top: 50%; */
   text-align: center;
+  /* margin: auto; */
 }
 
 .m19slink {
@@ -274,21 +276,38 @@ section > h2 {
   -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   color: white;
-  top: 85%;
+  top: 90%;
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .m19slogo {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
-  top: 40%;
+  top: 10%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%); */
+  width: 256px;
+  height: 256px;
+  margin: 0px;
+  text-align: center;
+}
+
+.wrapper{
+  min-height: 100vh;
+}
+
+.m19sdiscription{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 10%;
+  text-align: center;
   -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
   -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 50%);
-  width: 256px;
-  margin: auto;
-  text-align: center;
+  /* display: flex; */
 }

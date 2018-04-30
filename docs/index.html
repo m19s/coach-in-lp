@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COACH IN</title>
-    <meta name="description" content="Infinite WebGL tubes as seen on Fornasetti.com made with Three.js" />
-    <meta name="keywords" content="webgl, effect, tube, infinite, interactive, threejs, background, canvas" />
-    <meta name="author" content="Louis Hoebregts for Codrops" />
+    <meta name="description" content="coach in is wearable device for acquire physical skill. " />
+    <meta name="keywords" content="ems, muscle, ios, sensor, esp32" />
+    <meta name="author" content="m19s" />
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -26,13 +28,13 @@
         </div>
         <div class='header__navs'>
             <div class='header__nav--first-item header__nav'>
-                <a href="#about">about</a>
+                <a href="#about">About</a>
             </div>
             <div class='header__nav--secound-item header__nav'>
-                <a href="#tech">technology</a>
+                <a href="#tech">Technology</a>
             </div>
             <div class='header__nav--third-item header__nav'>
-                <a href="#aboutus">about us</a>
+                <a href="#aboutus">AboutUs</a>
             </div>
         </div>
     </nav>
@@ -52,13 +54,12 @@
 
     <section class='about' id='about'>
         <!-- <h2 id="about" class='section__title'></h2> -->
-        <h2 class='section__title'>about coach-in</h2>
+        <h2 class='section__title'>About coach-in</h2>
         <figure class="image is-256x256 discreption__image-box discreption__image-box--right" data-aos="fade-up" data-aos-easing="ease-in-sine"
             data-aos-duration="500">
             <img src="../assets/logo.svg" alt="Placeholder image">
         </figure>
         <div class='discreption discreption--image-right'>
-
             <p class='discreption__text'>Coach-inは電気刺激を用いて装着者の身体を駆動させるウェアラブルデバイスです。 スポーツトレーニングのコーチが身体の動かし方を教えてくれるように、ウェアラブルデバイスがあなたの身体を駆動させ教示することを目指しています。
                 自分の身体が誰かに操られる、そんな体験を提供します。
             </p>
@@ -66,9 +67,9 @@
     </section>
 
     <section class='tech contents' id='tech'>
-        <h2 class='section__title'>technology</h2>
-        <div class="columns discreption">
-            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
+        <h2 class='section__title'>Technology</h2>
+        <div class="columns tech__columns">
+            <div class="column is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
                 <div class="card-image">
                     <figure class="image is-128x128">
                         <img src="../assets/elec.png" alt="Placeholder image">
@@ -77,15 +78,14 @@
                 <div class="card-content">
                     <div class="content">
                         <p class="title">EMS</p>
-                        <p class="subtitle is-6">Electric Muscle Stimulation（EMS）による身体駆動</p>
+                        <p class="subtitle is-6">Electric Muscle Stimulationによる身体駆動</p>
                         筋肉は、脳からの命令となる電気的な刺激を受け運動します。 電気筋肉刺激（Electric Muscle Stimulation：EMS）は脳の命令と同様の刺激を電気によって与え筋肉を運動させる技術です。Coach-inはこの技術を用いユーザの指を動かします。我々は指の駆動にEMSを用いることで、モータやワイヤを用いる場合と比べ軽量・小型なウェアラブルデバイスを開発しています。
-                        <a>#electronics</a>.
+                        <a>#stimulation</a>
                         <a>#muscle</a>
-                        <a>#pad</a>
                     </div>
                 </div>
             </div>
-            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
+            <div class="column is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                 <div class="card-image">
                     <figure class="image is-128x128">
                         <img src="../assets/iphone.png" alt="Placeholder image">
@@ -95,14 +95,14 @@
                     <div class="content">
                         <p class="title">iOS Application</p>
                         <p class="subtitle is-6">Bluetoothによる様々な機器との連携 </p>
-                        Coach-inには搭載されたBluetoothモジュールが搭載されており、コンピュータやスマートフォンと通信することで様々な機器と連携することができます。 例えば、コンピュータに接続されたゲームコントローラーで他人の身体を遠隔操作したり、スマホで再生している音楽に合わせて勝手に足踏みしてしまう体験を提供できます。
-                        <a>#swift</a>.
+                        Coach-inにはBluetoothモジュールが搭載されており、コンピュータやスマートフォンと通信することで様々な機器と連携することができます。 例えば、コンピュータに接続されたゲームコントローラーで他人の身体を遠隔操作したり、スマホで再生している音楽に合わせて勝手に足踏みしてしまう体験を提供できます。
+                        <a>#swift</a>
                         <a>#bluetooth</a>
                     </div>
                 </div>
 
             </div>
-            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
+            <div class="column is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                 <div class="card-image">
                     <figure class="image is-128x128">
                         <img src="../assets/sensor.png" alt="Placeholder image">
@@ -119,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="column  is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1300">
+            <div class="column is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1300">
                 <div class="card-image">
                     <figure class="image is-128x128">
                         <img src="../assets/mike.png" alt="Placeholder image">
@@ -141,7 +141,7 @@
 
     <section class='experience' id='experience'>
         <!-- <h2 id="about" class='section__title'></h2> -->
-        <h2 class='section__title'>Experience Exmaple</h2>
+        <h2 class='section__title'>Experience</h2>
         <div class="tile is-ancestor">
             <div class="tile is-parent">
                 <article class="tile is-child notification is-success">
@@ -181,10 +181,10 @@
     </section>
 
     <section class='developing' id='developing'>
-        <h2 class='section__title'>Developing now</h2>
+        <h2 class='section__title'>Developing</h2>
         <p>現在、左右の腕に装着し指を駆動させるデバイスとして開発を進めています。</p>
 
-        <div class="columns discreption">
+        <div class="columns">
             <div class="column  is-one-third " data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
                 <div class="">
                     <figure class="image is-512x512">
@@ -217,14 +217,24 @@
     </section>
 
     <section class='aboutus' id='aboutus'>
-        <h2 class='section__title'>about us</h2>
+        <h2 class='section__title'>About us</h2>
+        <!-- <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
         <p class='discreption__text'>松茸電脳科技（Mat5utake Technologies）は, 技術を用いて, 世の中の暮らしをよくするプロダクツを生み出す, "クリエイティヴハッカー集団 "です. エレクトロニクス, マシンラーニング, ハードウェア設計,
             インターネットの技術者によって構成されています.
-            <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
-        </p>
-        <a class='m19slink'>matsutake technologies
+        </p> -->
 
-        </a>
+        <div class='m19sdiscription'>
+            <a class='m19slink__img' href="http://www.m19s.tokyo/">
+                <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
+            </a>
+            <p class='discreption__text'>松茸電脳科技（Mat5utake Technologies）は, 技術を用いて, 世の中の暮らしをよくするプロダクツを生み出す, "クリエイティヴハッカー集団 "です. エレクトロニクス, マシンラーニング, ハードウェア設計,
+                インターネットの技術者によって構成されています.
+            </p>
+        </div>
+
+
+
+        <a class='m19slink' href="http://www.m19s.tokyo/">matsutake technologies</a>
         <div class='wrapper'></div>
     </section>
 
