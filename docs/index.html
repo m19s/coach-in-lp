@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COACH IN</title>
+    <title>coach-in</title>
     <meta name="description" content="coach in is wearable device for acquire physical skill. " />
     <meta name="keywords" content="ems, muscle, ios, sensor, esp32" />
     <meta name="author" content="m19s" />
@@ -30,10 +30,13 @@
                 <a href="#about">About</a>
             </div>
             <div class='header__nav--secound-item header__nav'>
-                <a href="#tech">Technology</a>
+                <a href="#tech">Technologies</a>
+            </div>
+            <div class='header__nav--secound-item header__nav'>
+                <a href="#experience">Experiences</a>
             </div>
             <div class='header__nav--third-item header__nav'>
-                <a href="#aboutus">AboutUs</a>
+                <a href="#aboutus">Mat5utake</a>
             </div>
         </div>
     </nav>
@@ -53,20 +56,21 @@
 
     <section class='about' id='about'>
         <!-- <h2 id="about" class='section__title'></h2> -->
-        <h2 class='section__title'>About coach-in</h2>
+        <h2 class='section__title'>What is coach-in?</h2>
         <figure class="image is-256x256 discreption__image-box discreption__image-box--right" data-aos="fade-up" data-aos-easing="ease-in-sine"
             data-aos-duration="500">
             <img src="../assets/logo.svg" alt="Placeholder image">
         </figure>
         <div class='discreption discreption--image-right'>
-            <p class='discreption__text'>Coach-inは電気刺激を用いて装着者の身体を駆動させるウェアラブルデバイスです。 スポーツトレーニングのコーチが身体の動かし方を教えてくれるように、ウェアラブルデバイスがあなたの身体を駆動させ教示することを目指しています。
-                自分の身体が誰かに操られる、そんな体験を提供します。
+            <p class='discreption__text'>
+            	coach-in（コーチ・イン）は電気刺激を用いて装着者の身体を駆動させるウェアラブルデバイスです。 <br>
+            	スポーツトレーニングのコーチがあなたに触れて身体の動かし方を教えてくれるように、coach-inは筋肉に電気刺激を与え身体の動かし方を教示します。 <br>coach-inはコーチが自分に憑依するような、自分の身体が誰かに操られる体験を提供します。
             </p>
         </div>
     </section>
 
     <section class='tech contents' id='tech'>
-        <h2 class='section__title'>Technology</h2>
+        <h2 class='section__title'>Technologies</h2>
         <div class="columns tech__columns">
             <div class="column is-one-quarter card" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
                 <div class="card-image">
@@ -78,7 +82,7 @@
                     <div class="content">
                         <p class="title">EMS</p>
                         <p class="subtitle is-6">Electric Muscle Stimulationによる身体駆動</p>
-                        筋肉は、脳からの命令となる電気的な刺激を受け運動します。 電気筋肉刺激（Electric Muscle Stimulation：EMS）は脳の命令と同様の刺激を電気によって与え筋肉を運動させる技術です。Coach-inはこの技術を用いユーザの指を動かします。我々は指の駆動にEMSを用いることで、モータやワイヤを用いる場合と比べ軽量・小型なウェアラブルデバイスを開発しています。
+                        筋肉は、脳からの命令となる電気的な刺激を受け運動します。 電気筋肉刺激（Electric Muscle Stimulation：EMS）は脳の命令と同様の刺激を電気によって与え筋肉を運動させる技術です。 coach-inはこの技術を用いユーザの指や足の筋肉を動かします。 我々は身体の駆動にEMSを活用することで、モータやワイヤーを用いる場合と比べ軽量・小型なウェアラブルデバイスを開発しています。
                         <br>
                         <a>#stimulation</a>
                         <a>#muscle</a>
@@ -93,12 +97,11 @@
                 </div>
                 <div class="card-content">
                     <div class="content">
-                        <p class="title">iOS Application</p>
-                        <p class="subtitle is-6">Bluetoothによる様々な機器との連携 </p>
-                        Coach-inにはBluetoothモジュールが搭載されており、コンピュータやスマートフォンと通信することで様々な機器と連携することができます。 例えば、コンピュータに接続されたゲームコントローラーで他人の身体を遠隔操作したり、スマホで再生している音楽に合わせて勝手に足踏みしてしまう体験を提供できます。
+                        <p class="title">Smartphone Application</p>
+                        <p class="subtitle is-6">Bluetoothによる様々な機器との連携</p>
+                        coach-inは内蔵のBluetoothモジュールを通してコンピュータやスマートフォンと通信することで、様々な機器と連携できます。 例えば、コンピュータに接続されたゲームコントローラーから電気刺激を与える命令を送り他人の身体を遠隔操作したり、スマホで再生している音楽に合わせて電気刺激を行い勝手に足踏みしてしまう体験を提供できます。
                         <br>
-                        <a>#swift</a>
-                        <a>#bluetooth</a>
+                        <a>#bluetooth low energy</a>
                     </div>
                 </div>
 
@@ -111,9 +114,9 @@
                 </div>
                 <div class="card-content">
                     <div class="content">
-                        <p class="title">Sensor</p>
+                        <p class="title">Sensors</p>
                         <p class="subtitle is-6">センサフュージョンによる行動センシング </p>
-                        Coach-inには加速度センサ・ジャイロセンサ・筋電位センサが搭載されており、ユーザの行動をリアルタイムにセンシング・分析します。 Coach-inはこれらのセンサのデータをリアルタイムに分析することで、あなたの身体へ適切な筋肉の動かし方を指示します。
+                        coach-inには加速度センサ・ジャイロセンサ・筋電センサなど複数のセンサを搭載しており、装着者の身体動作をリアルタイムにセンシングします。 coach-inに搭載されたマイコンがこれらのセンサデータをリアルタイムに分析し、その結果に応じてユーザの筋肉の動かし方を決定します。
                         <br>
                         <a>#ESP32</a>
                         <a>#bluetooth</a>
@@ -130,9 +133,8 @@
                 <div class="card-content">
                     <div class="content">
                         <p class="title">Virtual Assistant</p>
-                        <p class="subtitle is-6">音声対話インターフェイスによる情報入力</p>
-                        Coach-inに搭載されたマイクはあなたと音声対話エージェントとの会話を可能にします。 マイクから入力された音声はクラウドサーバで音声解析され、その結果はCoach-inに取り付けられたLEDの光とスピーカーからの音声でユーザに伝わります。
-                        我々は自分とは異なる存在が身体にインストールされる体験を提案します。
+                        <p class="subtitle is-6">音声対話インターフェイスによる身体との対話</p>
+                        coach-inは音声対話アシスタントを搭載しており、あなたは声でデバイスを操作できます。 あなたがcoach-inに喋りかけると、その音声はクラウドサーバへ送信され解析されます。 解析結果に応じてcoach-inに取り付けられたLEDやスピーカーから再生される音声でユーザにフィードバックを与えるとともに、筋電機能によりあなたの身体を駆動させます。 coach-inはウェアラブルデバイスと対話し自分の身体を駆動させることで、身体に自分以外の"存在"をインストールする体験を提案します。
                         <br>
                         <a>#alexa</a>
                         <a>#aws lambda</a>
@@ -143,9 +145,21 @@
     </section>
 
     <section class='experience' id='experience'>
-        <!-- <h2 id="about" class='section__title'></h2> -->
-        <h2 class='section__title'>Experience</h2>
+        <h2 class='section__title'>Experiences</h2>
+        <p>coach-inを使うことで、例えば次のような体験ができます。</p>
+
         <div class="tile is-ancestor">
+            <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">強制ダンスフロア体験</p>
+                        <p class="subtitle">足に装着することで、映像とシンクロして足踏みしてしまう</p>
+                        <div class="content">
+                            <!-- Content -->
+                        </div>
+                    </div>
+                </article>
+            </div>
             <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                 <article class="tile is-child notification is-success">
                     <div class="content">
@@ -158,22 +172,11 @@
                     </div>
                 </article>
             </div>
-            <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
-                <article class="tile is-child notification is-success">
-                    <div class="content">
-                        <p class="title">強制ダンスフロア体験</p>
-                        <p class="subtitle">足に装着することで、映像とシンクロして足踏みしてしまう</p>
-                        <div class="content">
-                            <!-- Content -->
-                        </div>
-                    </div>
-                </article>
-            </div>
             <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1400">
                 <article class="tile is-child notification is-success">
                     <div class="content">
                         <p class="title">ミギー憑依体験</p>
-                        <p class="subtitle">音声対話エージェント機能を活用した自分の右手と対話する</p>
+                        <p class="subtitle">音声対話エージェント機能を活用した自分の右手との対話</p>
                         <div class="content">
                             <!-- Content -->
                         </div>
@@ -184,8 +187,8 @@
     </section>
 
     <section class='developing' id='developing'>
-        <h2 class='section__title'>Developing</h2>
-        <p>現在、左右の腕に装着し指を駆動させるデバイスとして開発を進めています。</p>
+        <h2 class='section__title'>Gallery</h2>
+        <p>現在、左右の腕に装着でき、指を駆動させるデバイスとして開発を進めています。</p>
 
         <div class="columns">
             <div class="column  is-one-third " data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500">
@@ -220,19 +223,17 @@
     </section>
 
     <section class='aboutus' id='aboutus'>
-        <h2 class='section__title'>About us</h2>
+        <h2 class='section__title'>About Us</h2>
         <div class='m19sdiscription'>
             <a class='m19slink__img' href="http://www.m19s.tokyo/">
                 <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
             </a>
-            <p class='discreption__text'>松茸電脳科技（Mat5utake Technologies）は, 技術を用いて, 世の中の暮らしをよくするプロダクツを生み出す, "クリエイティヴハッカー集団 "です. エレクトロニクス, マシンラーニング, ハードウェア設計,
-                インターネットの技術者によって構成されています.
+            <p class='discreption__text'>
+            	松茸電脳科技（Mat5utake Technologies）は、技術を用いて世の中の暮らしをよくするプロダクツを生み出す"クリエイティヴハッカー集団 "です。
+            	スマートフォンアプリ開発、組み込み開発、機械学習、インターネッツの技術者によって構成されています。
             </p>
         </div>
-
-
-
-        <a class='m19slink' href="http://www.m19s.tokyo/">mat5utake technologies</a>
+        <a class='m19slink' href="http://www.m19s.tokyo/">Mat5utake Technologies, 2018</a>
         <div class='wrapper'></div>
     </section>
 

@@ -204,6 +204,7 @@ section > h2 {
   /* background-color: black; */
   height: auto;
   min-height: 0px;
+  text-align: center;
 }
 
 .tile.is-ancestor {
@@ -239,6 +240,7 @@ section > h2 {
 }
 
 .discreption__text {
+  text-align:center;
 }
 
 .m19slink {
