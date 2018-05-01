@@ -21,6 +21,7 @@ body {
   margin: 0px;
   background-color: whitesmoke;
   font-family: "Mplus 1p";
+  background: black;
 }
 
 section {
@@ -41,24 +42,25 @@ p {
   height: 100%;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+.navbar {
   align-items: center;
   background-color: black;
   color: white;
   padding-top: 8px;
   padding-bottom: 4px;
   min-height: 56px;
+  box-shadow: none;
 }
 
-.header__navs {
+.navbar-menu {
+  background-color: black;
+  padding-left: 24px;
+}
+
+.header__nav {
   display: flex;
-  font-family: "Titillium Web", sans-serif;
-}
-
-.header__navs > div {
   margin-right: 16px;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .header__nav > a {
@@ -67,8 +69,6 @@ p {
 
 .header__logo {
   width: 128px;
-  padding-left: 24px;
-  margin-top: 8px;
 }
 
 .about {
@@ -77,7 +77,9 @@ p {
   width: 100%;
   padding: 32px;
 }
-
+.navbar-burger {
+  color: white;
+}
 .discreption__text {
   margin-top: 64px;
 }
@@ -240,7 +242,7 @@ section > h2 {
 }
 
 .discreption__text {
-  text-align:center;
+  text-align: center;
 }
 
 .m19slink {
@@ -253,7 +255,7 @@ section > h2 {
   -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   color: white;
-  top: 90%;
+  top: 95%;
   text-align: center;
   font-size: 16px;
 }
@@ -266,8 +268,8 @@ section > h2 {
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
   -o-transform: translate(-50%, 0%); */
-  width: 256px;
-  height: 256px;
+  width: 512px;
+  height: 512px;
   margin: 0px;
   text-align: center;
 }
@@ -292,25 +294,34 @@ section > h2 {
 }
 
 .m19sdiscription > .discreption__text {
-  margin-top: 70px;
   position: absolute;
   color: white;
-  width: 40%;
+  width: 80%;
+  top: 80%;
   left: 50%;
-  /* -webkit-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%); */
+  -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   color: white;
-  /* top: 50%; */
   text-align: center;
-  /* margin: auto; */
 }
 
 @media only screen and (max-width: 769px) {
   .m19sdiscription > .discreption__text {
     margin-top: 0px;
     width: 80%;
+    top: 100%;
+  }
+  .m19slink {
+    top: 90%;
+  }
+
+  .m19slogo {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    text-align: center;
   }
 }
