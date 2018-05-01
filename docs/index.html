@@ -8,12 +8,11 @@
     <meta name="description" content="coach in is wearable device for acquire physical skill. " />
     <meta name="keywords" content="ems, muscle, ios, sensor, esp32" />
     <meta name="author" content="m19s" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/aos.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script>
@@ -24,7 +23,7 @@
 <body>
     <nav class='header'>
         <div class='header__logo'>
-            <img src="../assets/logo.svg" alt="Placeholder image">
+            <img src="../assets/menulogo.svg" alt="Placeholder image">
         </div>
         <div class='header__navs'>
             <div class='header__nav--first-item header__nav'>
@@ -80,6 +79,7 @@
                         <p class="title">EMS</p>
                         <p class="subtitle is-6">Electric Muscle Stimulationによる身体駆動</p>
                         筋肉は、脳からの命令となる電気的な刺激を受け運動します。 電気筋肉刺激（Electric Muscle Stimulation：EMS）は脳の命令と同様の刺激を電気によって与え筋肉を運動させる技術です。Coach-inはこの技術を用いユーザの指を動かします。我々は指の駆動にEMSを用いることで、モータやワイヤを用いる場合と比べ軽量・小型なウェアラブルデバイスを開発しています。
+                        <br>
                         <a>#stimulation</a>
                         <a>#muscle</a>
                     </div>
@@ -96,6 +96,7 @@
                         <p class="title">iOS Application</p>
                         <p class="subtitle is-6">Bluetoothによる様々な機器との連携 </p>
                         Coach-inにはBluetoothモジュールが搭載されており、コンピュータやスマートフォンと通信することで様々な機器と連携することができます。 例えば、コンピュータに接続されたゲームコントローラーで他人の身体を遠隔操作したり、スマホで再生している音楽に合わせて勝手に足踏みしてしまう体験を提供できます。
+                        <br>
                         <a>#swift</a>
                         <a>#bluetooth</a>
                     </div>
@@ -113,6 +114,7 @@
                         <p class="title">Sensor</p>
                         <p class="subtitle is-6">センサフュージョンによる行動センシング </p>
                         Coach-inには加速度センサ・ジャイロセンサ・筋電位センサが搭載されており、ユーザの行動をリアルタイムにセンシング・分析します。 Coach-inはこれらのセンサのデータをリアルタイムに分析することで、あなたの身体へ適切な筋肉の動かし方を指示します。
+                        <br>
                         <a>#ESP32</a>
                         <a>#bluetooth</a>
                     </div>
@@ -131,6 +133,7 @@
                         <p class="subtitle is-6">音声対話インターフェイスによる情報入力</p>
                         Coach-inに搭載されたマイクはあなたと音声対話エージェントとの会話を可能にします。 マイクから入力された音声はクラウドサーバで音声解析され、その結果はCoach-inに取り付けられたLEDの光とスピーカーからの音声でユーザに伝わります。
                         我々は自分とは異なる存在が身体にインストールされる体験を提案します。
+                        <br>
                         <a>#alexa</a>
                         <a>#aws lambda</a>
                     </div>
@@ -143,7 +146,7 @@
         <!-- <h2 id="about" class='section__title'></h2> -->
         <h2 class='section__title'>Experience</h2>
         <div class="tile is-ancestor">
-            <div class="tile is-parent">
+            <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                 <article class="tile is-child notification is-success">
                     <div class="content">
                         <p class="title">遠隔二人羽織体験</p>
@@ -155,7 +158,7 @@
                     </div>
                 </article>
             </div>
-            <div class="tile is-parent">
+            <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                 <article class="tile is-child notification is-success">
                     <div class="content">
                         <p class="title">強制ダンスフロア体験</p>
@@ -166,7 +169,7 @@
                     </div>
                 </article>
             </div>
-            <div class="tile is-parent">
+            <div class="tile is-parent" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1400">
                 <article class="tile is-child notification is-success">
                     <div class="content">
                         <p class="title">ミギー憑依体験</p>
@@ -204,7 +207,7 @@
             <div class="column  is-one-third" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
 
                 <figure class="image is-512x512">
-                    <img src="../assets/modelwriting.png" alt="Placeholder image">
+                    <img src="../assets/egawa.JPG" alt="Placeholder image">
                 </figure>
 
             </div>
@@ -218,11 +221,6 @@
 
     <section class='aboutus' id='aboutus'>
         <h2 class='section__title'>About us</h2>
-        <!-- <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
-        <p class='discreption__text'>松茸電脳科技（Mat5utake Technologies）は, 技術を用いて, 世の中の暮らしをよくするプロダクツを生み出す, "クリエイティヴハッカー集団 "です. エレクトロニクス, マシンラーニング, ハードウェア設計,
-            インターネットの技術者によって構成されています.
-        </p> -->
-
         <div class='m19sdiscription'>
             <a class='m19slink__img' href="http://www.m19s.tokyo/">
                 <img src="../assets/m19_opaslogo.png" alt="Placeholder image" class='m19slogo'>
@@ -234,7 +232,7 @@
 
 
 
-        <a class='m19slink' href="http://www.m19s.tokyo/">matsutake technologies</a>
+        <a class='m19slink' href="http://www.m19s.tokyo/">mat5utake technologies</a>
         <div class='wrapper'></div>
     </section>
 
@@ -245,7 +243,7 @@
     <script src="js/vendors/jquery-3.3.1.min.js "></script>
     <script src="js/vendors/jquery.inview.min.js "></script>
     <script src="js/vendors/perlin.js "></script>
-    <script src="js/demo5.js "></script>
+    <script src="js/tri.js "></script>
     <script src="js/model.js "></script>
     <script src="js/main.js "></script>
     <script>

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon");
 
 p {
   font-family: "Mplus 1p";
@@ -11,8 +11,8 @@ html {
   height: 100%;
   margin: 0px;
 }
-h2{
-  font-family: 'Titillium Web', sans-serif;
+h2 {
+  font-family: "Titillium Web", sans-serif;
 }
 
 body {
@@ -47,17 +47,18 @@ p {
   align-items: center;
   background-color: black;
   color: white;
-  padding-top: 4px;
+  padding-top: 8px;
   padding-bottom: 4px;
   min-height: 56px;
 }
 
 .header__navs {
   display: flex;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .header__navs > div {
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 .header__nav > a {
@@ -65,7 +66,9 @@ p {
 }
 
 .header__logo {
-  width: 56px;
+  width: 128px;
+  padding-left: 24px;
+  margin-top: 8px;
 }
 
 .about {
@@ -76,7 +79,7 @@ p {
 }
 
 .discreption__text {
-  margin-top: 32px;
+  margin-top: 64px;
 }
 
 section {
@@ -138,12 +141,6 @@ section {
   flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 375px) {
-  .discreption {
-    display: block;
-  }
-}
-
 section > h2 {
   font-size: 36px;
   padding-top: 18px;
@@ -152,10 +149,6 @@ section > h2 {
 
 .discreption > * {
   padding: 8px;
-}
-
-.tech__columns > div {
-  /* margin: 8px; */
 }
 
 .discreption__image-box {
@@ -172,14 +165,19 @@ section > h2 {
   padding: 16px;
 }
 
-.discreption > .card {
-  margin-right: 8px;
-  margin-left: 8px;
+.tech__columns {
+  /* padding: 4px; */
 }
 
-.card {
-  padding: 24px;
+.tech__columns > .card {
+  /* margin-right: 4px;
+  margin-left: 4px; */
+  /* padding: 16px; */
 }
+
+/* .card {
+  padding: 24px;
+} */
 
 .image {
   text-align: center;
@@ -200,16 +198,6 @@ section > h2 {
 
 .system__image > img {
   width: 100%;
-}
-
-margin-left: 8px;
-}
-
-@media screen and (min-width: 769px) .column.is-one-quarter {
-    flex: none;
-    width: 25%;
-} {
-  flex: initial;
 }
 
 .experience {
@@ -251,19 +239,6 @@ margin-left: 8px;
 }
 
 .discreption__text {
-  position: absolute;
-  color: white;
-  width: 80%;
-  left: 50%;
-  /* -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%); */
-  transform: translate(-50%, 0%);
-  color: white;
-  /* top: 50%; */
-  text-align: center;
-  /* margin: auto; */
 }
 
 .m19slink {
@@ -295,11 +270,12 @@ margin-left: 8px;
   text-align: center;
 }
 
-.wrapper{
+.wrapper {
   min-height: 100vh;
+  background-color: black;
 }
 
-.m19sdiscription{
+.m19sdiscription {
   position: absolute;
   width: 100%;
   left: 50%;
@@ -309,5 +285,30 @@ margin-left: 8px;
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
   -o-transform: translate(-50%, 0%);
+
   /* display: flex; */
+}
+
+.m19sdiscription > .discreption__text {
+  margin-top: 70px;
+  position: absolute;
+  color: white;
+  width: 40%;
+  left: 50%;
+  /* -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%); */
+  transform: translate(-50%, 0%);
+  color: white;
+  /* top: 50%; */
+  text-align: center;
+  /* margin: auto; */
+}
+
+@media only screen and (max-width: 769px) {
+  .m19sdiscription > .discreption__text {
+    margin-top: 0px;
+    width: 80%;
+  }
 }
