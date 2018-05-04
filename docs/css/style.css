@@ -166,19 +166,7 @@ section>h2 {
   padding: 16px;
 }
 
-.tech__columns {
-  /* padding: 4px; */
-}
-
-.tech__columns>.card {
-  /* margin-right: 4px;
-  margin-left: 4px; */
-  /* padding: 16px; */
-}
-
-/* .card {
-  padding: 24px;
-} */
+.section__title--tech {}
 
 .image {
   text-align: center;
@@ -231,9 +219,11 @@ section>h2 {
   transform: translate(-50%, 0%);
   color: white;
   font-size: 36px;
+  margin-top: 1.5rem
 }
 
 .section__title-about {
+  color: white;
   font-size: 36px;
   margin-bottom: 36px;
   word-wrap: break-word;
