@@ -13,6 +13,7 @@ function init() {
     canvas: document.querySelector("#model"),
     alpha: true
   });
+  renderer.setPixelRatio(1);
   renderer.setClearColor(0x000000, 0); // the default
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(width, height);
@@ -43,7 +44,6 @@ function init() {
     object.rotation.set(1.5, 1, 0.2);
   });
   tick();
-  // 毎フレーム時に実行されるループイベントです
   function tick() {
     // レンダリング
     renderer.render(scene, camera);
