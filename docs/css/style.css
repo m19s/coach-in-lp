@@ -107,14 +107,20 @@ section {
   background-color: #464646;
 }
 
+#kv{
+  display: none;
+  visibility : hidden;
+}
+
 @media only screen and (max-width: 769px) {
-  .keyvisual-section {
-    margin-top: 0px;
-    padding-bottom: 0px;
+  #kv{
+    display: inline;
+    visibility: visible;
     background-color: black;
-    background-image: url("../../assets/new_3d_pic_mobile.png");
-  
-    background-color: #464646;
+  }
+  .keyvisual-section {
+    background-image: none;
+    background-color: black;
   }
 }
 
