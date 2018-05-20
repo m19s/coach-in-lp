@@ -1,6 +1,14 @@
 // ページの読み込みを待つ
 window.addEventListener("load", init);
 
+var ua = navigator.userAgent;
+if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0) {
+  var sp = true;
+} else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+  var sp = true;
+}
+
+
 var ww = window.innerWidth;
 var wh = window.innerHeight;
 
@@ -25,7 +33,23 @@ function init() {
   // カメラの初期座標を設定
   camera.position.set(0, 0, 300);
   // カメラコントローラーを作成
-  const controls = new THREE.OrbitControls(camera);
+  // const controls = new THREE.OrbitControls(camera);
+
+
+
+
+
+  if (sp) {
+    var controls = new THREE.DeviceOrientationControls(camera);
+    controls.connect();
+  } else {
+    var controls = new THREE.OrbitControls(camera);
+  }
+
+
+
+
+
   // 平行光源を作成
   const directionalLight = new THREE.DirectionalLight(0xffffff);
   directionalLight.position.set(1, 1, 1);
@@ -44,6 +68,7 @@ function init() {
     object.rotation.set(1.5, 1, 0.2);
   });
   tick();
+
   function tick() {
     // レンダリング
     renderer.render(scene, camera);

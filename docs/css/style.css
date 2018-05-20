@@ -9,6 +9,10 @@ h2 {
   font-family: "Titillium Web", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -16,6 +20,8 @@ body {
   background-color: whitesmoke;
   font-family: "Mplus 1p";
   background: black;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 
 section {
@@ -80,7 +86,8 @@ p {
 }
 
 .discreption__text {
-  margin-top: 64px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 section {
@@ -92,6 +99,29 @@ section {
   margin-top: 0px;
   padding-bottom: 0px;
   background-color: black;
+  background-image: url("../../assets/new_3d_pic.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+@media only screen and (max-width: 769px) {
+  .keyvisual-section {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    background-color: black;
+    background-image: url("../../assets/new_3d_pic_mobile.png");
+  
+    background-color: #464646;
+  }
+}
+
+#video-background {
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
 }
 
 .section__title {
@@ -205,18 +235,17 @@ section>h2 {
 }
 
 .aboutus {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
   padding-bottom: 0px;
+  background-color: black;
+  position:relative;
 }
 
 .section__title--aboutus {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
   color: white;
   font-size: 36px;
   margin-top: 1.5rem
@@ -243,27 +272,13 @@ section>h2 {
 
 .m19slink {
   color: white;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  color: white;
-  top: 95%;
   text-align: center;
   font-size: 16px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .m19slogo {
-  /* position: absolute;
-  left: 50%;
-  top: 10%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%); */
   width: 512px;
   height: 512px;
   margin: 0px;
@@ -276,29 +291,17 @@ section>h2 {
 }
 
 .m19sdiscription {
-  position: absolute;
   width: 100%;
-  left: 50%;
-  top: 10%;
   text-align: center;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .m19sdiscription>.discreption__text {
-  position: absolute;
   color: white;
   width: 80%;
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
   color: white;
   text-align: center;
 }
@@ -308,14 +311,10 @@ section>h2 {
     font-size: 14px;
     margin-top: 0px;
     width: 80%;
-    top: 100%;
-  }
-  .m19slink {
-    top: 90%;
   }
   .m19slogo {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 0px;
     text-align: center;
   }

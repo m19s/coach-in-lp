@@ -11,13 +11,12 @@
     <link rel="shortcut icon" href="./assets/favicon.ico">
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script>
-        document.documentElement.className = 'js';
-    </script>
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
+    
 </head>
 
 <body>
@@ -59,13 +58,7 @@
     </nav>
 
     <section class='keyvisual-section'>
-        <canvas id='model'>
-        </canvas>
-        <div class='keyvisual-titles'>
-        </div>
-        <canvas id="scene">
-        </canvas>
-
+        
     </section>
 
 
@@ -270,56 +263,27 @@
                     松茸電脳科技（Mat5utake Technologies）は、技術を用いて世の中の暮らしをよくするプロダクツを生み出す"クリエイティヴハッカー集団 "です。 スマートフォンアプリ開発、組み込み開発、機械学習、インターネッツの技術者によって構成されています。
                 </p>
             </div>
-            <a class='m19slink' href="http://www.m19s.tokyo/">Mat5utake Technologies, 2018</a>
-            <div class='wrapper'></div>
-
-            <!-- <video controls autoplay loop id='video-background'>
-            <source src="../assets/stardust.mp4">
-        </video> -->
+            
         </div>
+        <a class='m19slink' href="http://www.m19s.tokyo/">Mat5utake Technologies, 2018</a>
     </section>
-
-    <script src="js/vendors/three.min.js "></script>
-    <script src="js/vendors/OrbitControls.js"></script>
-    <script src="js/vendors/TDSLoader.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-
-            // Get all "navbar-burger" elements
             var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Check if there are any navbar burgers
             if ($navbarBurgers.length > 0) {
-
-                // Add a click event on each of them
                 $navbarBurgers.forEach(function ($el) {
                     $el.addEventListener('click', function () {
-
-                        // Get the target from the "data-target" attribute
                         var target = $el.dataset.target;
                         var $target = document.getElementById(target);
-
-                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
                         $el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
-
                     });
                 });
             }
-
         });
     </script>
-    <script src="js/vendors/aos.js "></script>
-    <script src="js/vendors/jquery-3.3.1.min.js "></script>
-    <script src="js/vendors/jquery.inview.min.js "></script>
-    <script src="js/vendors/perlin.js "></script>
-    <script src="js/tri.js "></script>
-    <script src="js/model.js "></script>
-    <script src="js/main.js "></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script>AOS.init();</script><!--AOS設定スクリプト-->
 </body>
 
 </html>
