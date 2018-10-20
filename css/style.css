@@ -99,7 +99,7 @@ section {
   margin-top: 0px;
   padding-bottom: 0px;
   background-color: black;
-  background-image: url("./../assets/shade_model.png");
+  background-image: url("./../assets/mesh_pc.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -190,7 +190,7 @@ section>h2 {
 }
 
 .discreption>* {
-  padding: 8px;
+  padding-top: 16px;
 }
 
 .discreption__image-box {
@@ -205,6 +205,10 @@ section>h2 {
 
 .contents {
   padding: 16px;
+}
+
+.is-one-quarter{
+  padding-top: 32px;
 }
 
 .section__title--tech {}
